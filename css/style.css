@@ -44,6 +44,11 @@ h1{
     color: white;
     background-color: #1b1b32;
 }
+.seccion-clara{
+    color:black;
+    background-color: white;
+}
+
 
 .seccion-titulo{   
     font-size: 2rem;
@@ -112,8 +117,26 @@ h1{
 
 /*----------------------------------*/
 .skills{
-    /*padding: 0 2rem;*/
+    padding: 40px;
 }
+
+.skills .row div{
+    height: 250px;
+    background-color: purple;
+    border: 3px solid orange;
+}
+
+.skills__name{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.skills__img{
+    height: 50%;
+    width: 50%;
+}
+
 
 .academic{
    /*padding: 0 2rem;*/
