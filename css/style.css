@@ -40,6 +40,10 @@ h1{
 
 }
 
+h3{
+    font-size: 2rem;
+}
+
 .seccion-oscura{
     color: white;
     background-color: #1b1b32;
@@ -117,24 +121,41 @@ h1{
 
 /*----------------------------------*/
 .skills{
-    padding: 40px;
+    padding: 40px 40px 60px 40px;
+}
+.skills__title{
+    font-weight: bold;    
+    margin: 1.2em 0;   
+    text-shadow: 1px 2px #fcfaf7, 3px 4px #e2e9f3;
+    text-transform: uppercase;
+
 }
 
 .skills .row div{
     height: 250px;
-    background-color: purple;
-    border: 3px solid orange;
+    /*background-color: purple;   //borrar
+    border: 3px solid orange;*/
+    transition: 1s all cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.skills .row div:hover{
+    color: #c78c19;   
+    text-shadow: 0 3px 4px #d4cebf;
+    text-transform: uppercase;
+    transform: scale(1.15);
+
+    
 }
 
 .skills__name{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     margin: 10px 0;
 }
 
 .skills__img{
     height: 50%;
-    width: 50%;
+    
 }
 
 
