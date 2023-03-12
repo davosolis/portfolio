@@ -44,26 +44,45 @@ h3{
     font-size: 2rem;
 }
 
-.seccion-oscura{
+.g-seccion-oscura{
     color: white;
     background-color: #1b1b32;
 }
-.seccion-clara{
+.g-seccion-clara{
     color:black;
     background-color: white;
 }
 
 
-.seccion-titulo{   
+.g-seccion-titulo{   
     font-size: 2rem;
     padding: 15px 0;
-    
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0.5em 0;   
 }
 
-.seccion-texto{
-    font-size: 1.2rem;
-   
+.g-texto-sombra{     
+    text-shadow: 1px 2px #fcfaf7, 3px 4px #e2e9f3; 
 }
+
+.g-seccion-texto{
+    font-size: 1.2rem;
+}
+
+.g-texto-negro{
+    color: black;
+}
+
+.g-texto-blanco{
+    color: white;
+}
+
+.btn-info{
+    font-size: 1.1rem;
+    margin: 20px;    
+}
+
 /*--------------------------------------------*/
 
 /*||||||||||||||||||||||||||header|||||||||||||||||||||||||||*/
@@ -123,13 +142,7 @@ h3{
 .skills{
     padding: 40px 40px 60px 40px;
 }
-.skills__title{
-    font-weight: bold;    
-    margin: 1.2em 0;   
-    text-shadow: 1px 2px #fcfaf7, 3px 4px #e2e9f3;
-    text-transform: uppercase;
 
-}
 
 .skills .row div{
     height: 250px;
@@ -160,22 +173,77 @@ h3{
 
 
 .academic{
-   /*padding: 0 2rem;*/
+   display: none;   /*<----------------no olvidar quitar solo es temporal */
 }
 
 .experience{
-   /*padding: 0 2rem;*/
+    padding: 40px;
+    border: 1px solid orange;
+}
+
+.experience__project-gallery{
+    padding-top: 60px;
+    margin-bottom: 40px;
+    border: 1px solid yellow;
+}
+
+.experience__project-gallery .row{
+    border: 1px dotted blue;
+}
+
+.experience__proyecto{
+    position: relative;
+    border: 1px solid red;
+}
+
+.experience__img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.experience__overlay{
+    transition: all 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 1px solid seagreen;
+}
+
+.experience__overlay p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.experience__icons-container{
+    display: flex;
+}
+
+.experience__icons-container i{
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+}
+
+
+.experience__proyecto:hover img{
+    opacity: 0.2;
+}
+
+.experience__proyecto:hover .experience__overlay{
+    opacity: 1;
 }
 
 
 
-
-
-
-footer{
-    border-color: red;
-    border-style: solid;
-    border-width: 1px;
+footer{  
     background: url(), rgb(61, 60, 60);
     color: white;
     text-align: center;
@@ -184,11 +252,23 @@ footer{
 
 
 /*--------------Responsive------------------*/
-@media screen and (max-width: 767px){
-    .navbar-brand{
-        display: none;
+
+@media screen and (max-width: 400px){
+
+    .skills .row div{
+        height: 170px;
+
     }
-} 
+
+    .experience__overlay p{
+        font-size: 18px;
+    }
+
+    .experience__icons-container i{
+      font-size: 40px;
+    }
+
+}
 
 @media screen and (min-width: 700px){
     .hero__inferior-img{              /*<-------Ojo aquí tuve que usar combinacion de selectores: clase y etiqueta para que le de prioridad y no entre en conflicto con .img-fluid de boostrap; ---> ver comportamiento en el devtools de google*/
@@ -196,3 +276,9 @@ footer{
     }
   
 }    
+
+@media screen and (max-width: 767px){
+    .navbar-brand{
+        display: none;
+    }
+} 

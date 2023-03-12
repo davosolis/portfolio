@@ -79,13 +79,13 @@
 
     <main>
         <!--Seccion Sobre mi-->
-        <section class="about seccion-oscura" id="sobre-mi">
+        <section class="about g-seccion-oscura" id="sobre-mi">
             <div class="about__container">
-                <h3 class="about__title seccion-titulo">SOBRE MI</h3>
-                <p class="about__paragraph seccion-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit
+                <h3 class="about__title g-seccion-titulo">SOBRE MI</h3>
+                <p class="about__paragraph g-seccion-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit
                     velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium.
                     Suspendisse potenti. Ut semper sagittis ligula et lacinia. </p>
-                <p class="about__paragraph seccion-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit
+                <p class="about__paragraph g-seccion-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit
                     velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium.
                     Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas
                     metus vitae, aliquet metus.</p>
@@ -95,8 +95,8 @@
         </section><!--Fin de Sobre mi-->
 
         <!--Seccion de Skills-->
-        <section class="skills seccion-clara" id="skills">
-            <h3 class="skills__title">Skills</h3>
+        <section class="skills g-seccion-clara" id="skills">
+            <h3 class="skills__title  g-seccion-titulo g-texto-sombra">Skills</h3>
             <div class="container text-center">
                 <div class="row">
                     <div class="columna col-12 col-md-4">                      
@@ -126,7 +126,7 @@
                 </div>        
             </div>
         </section><!--Fin de Skills-->
-
+        
         <!--Seccion de Formación Académica-->
         <section class="academic" id="formacion">
             <h2 class="academic__title">Formación académica</h2>
@@ -171,21 +171,82 @@
         </section><!--Fin de Formación academica-->
 
         <!--Sección Experiencia Profesional/Proyectos-->
-        <section class="experience" id="xp">
-            <h2 class="experience__section-title"></h2>
-            <div class="experience__box">
-                <img src="" alt="" class="experience__img">
-                <div class="experience__info">
-                    <h2 class="experience__title"></h2>
-                    <h3 class="esperience__text"></h3>
-                    <div class="experience__description">
-                        <span class="experience__repo"><a href="http://"><button
-                                    class="experience__repo-button">Repositório</button></a></span>
-                        <span class="experience__demo"><a href="http://"><button class="experience__demo-button">Ver
-                                    demo</button></a></span>
-                    </div>
-                </div>
-            </div>
+        <section class="experience g-seccion-clara flex-column" id="xp">
+            <h2 class="experience__section-title g-seccion-titulo g-texto-sombra g-texto-negro">Proyectos</h2>
+            <div class="container experience__project-gallery text-center">                
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4"> <!--Proyecto 1-->
+                        <div class="experience__proyecto">
+                            <img src="assets/proyecto1.png" alt="proyecto 1" class="experience__img">
+                            <div class="experience__overlay">
+                                <p>Proyecto 1</p>
+                                <div class="experience__icons-container">
+                                    <a href="https://github.com/davosolis/challenge-ahorcado" target="_blank" rel="noopener noreferrer">  <!--Acá poner el link al repositorio del proyecto El orde que sea descendente el primero en aparecer sea el último hecho hasta ahora-->
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="https://davosolis.github.io/challenge-ahorcado/" target="_blank" rel="noopener noreferrer">    
+                                        <i class="bi bi-laptop"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--FIN de Proyecto 1-->
+                    <div class="col-12 col-md-6 col-lg-4"> <!--Proyecto 2-->
+                        <div class="experience__proyecto">
+                            <img src="assets/proyecto2.png" alt="proyecto 1" class="experience__img">
+                            <div class="experience__overlay">
+                                <p>Proyecto 2</p>
+                                <div class="experience__icons-container">
+                                    <a href="https://github.com/davosolis/challenge_encriptador" target="_blank" rel="noopener noreferrer">  <!--Acá poner el link al repositorio del proyecto El orde que sea descendente el primero en aparecer sea el último hecho hasta ahora-->
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="https://davosolis.github.io/challenge_encriptador/" target="_blank" rel="noopener noreferrer">    
+                                        <i class="bi bi-laptop"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--FIN de Proyecto 2-->
+                    <div class="col-12 col-md-6 col-lg-4"> <!--Proyecto 3-->
+                        <div class="experience__proyecto">
+                            <img src="assets/proyecto3.png" alt="proyecto 1" class="experience__img">
+                            <div class="experience__overlay">
+                                <p>Proyecto 2</p>
+                                <div class="experience__icons-container">
+                                    <a href="https://github.com/davosolis/challenge_encriptador" target="_blank" rel="noopener noreferrer">  <!--Acá poner el link al repositorio del proyecto El orde que sea descendente el primero en aparecer sea el último hecho hasta ahora-->
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="https://davosolis.github.io/challenge_encriptador/" target="_blank" rel="noopener noreferrer">    
+                                        <i class="bi bi-laptop"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--FIN de Proyecto 3-->
+                    <div class="col-12 col-md-6 col-lg-12"> <!--Proyecto 4-->
+                        <div class="experience__proyecto">
+                            <img src="assets/proyecto4.png" alt="proyecto 1" class="experience__img">
+                            <div class="experience__overlay">
+                                <p>Proyecto 2</p>
+                                <div class="experience__icons-container">
+                                    <a href="https://github.com/davosolis/challenge_encriptador" target="_blank" rel="noopener noreferrer">  <!--Acá poner el link al repositorio del proyecto El orde que sea descendente el primero en aparecer sea el último hecho hasta ahora-->
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="https://davosolis.github.io/challenge_encriptador/" target="_blank" rel="noopener noreferrer">    
+                                        <i class="bi bi-laptop"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--FIN de Proyecto 4-->
+                </div> <!--FIN de row-->
+            </div><!--FIN de experience__project-gallery-->
+            <a href="https://github.com/davosolis/" target="_blank" rel="noopener noreferrer">
+                <button type="button" class="btn btn-info">
+                    Ver mis otros proyectos
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                </button>
+            </a>            
         </section><!--Fin de Proyectos-->
 
         <!--Aquí irá la Sección de contacto-->
