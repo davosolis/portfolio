@@ -232,6 +232,15 @@ h3{
     margin: 10px;
 }
 
+.experience button{
+    transition: all 1s ease;
+}
+
+.experience button a{
+    text-decoration: none;
+    color: black;
+}
+
 
 .experience__proyecto:hover img{
     /*opacity: 0.2;*/
@@ -241,6 +250,13 @@ h3{
 .experience__proyecto:hover .experience__overlay{
     opacity: 1;
 }
+
+
+.experience button:hover{
+    text-transform: uppercase;
+    transform: scale(1.15);
+}
+
 
 
 
