@@ -131,6 +131,25 @@ h3{
     font-size: 1.5rem;
     color: #615151;
 }
+
+.hero__network{
+    display: flex;
+	font-size: 1.15em;
+	margin: 5px 10px;
+	padding: 5px;	
+    /*border: 1px solid black;*/
+}
+
+.hero__item{
+    border-right: 1.5px solid darkgrey;
+}
+
+.hero__principal a{   
+    text-decoration: none; 
+    padding: 0 10px 0 20px;   
+}
+
+
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
 /*||||||||||||||||||main|||||||||||||||||||||*/
