@@ -97,12 +97,12 @@ h3{
 /*||||||||||||||||||||||||||header|||||||||||||||||||||||||||*/
 .navbar{
     padding: 2rem;
-    background-color: #f5f6f7;
+    background-color: #f5f6f7;    
 }
 
 .navbar-collapse{
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;    
 }
 
 .hero{
@@ -116,10 +116,13 @@ h3{
 }
 
 .hero__img-profile{
-    width: 200px;
+    /*width: 200px;*/
     height: 200px;
    /* border-radius: 50%; <-------ya no es necesario si aplica la clase de boostrap:---> rounded-circle   */
     margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, 
+    rgba(0, 0, 0, 0.14) 0px 5px 8px 0px, 
+    rgba(0, 0, 0, 0.12) 0px 1px 14px 0px;
 }
 
 .hero__principal h1{
@@ -235,7 +238,10 @@ h3{
     border-radius: 10px;
     display: block;
     transition: all 0.5s ease;
-    box-shadow: -1px 5px 5px #e2e9f3; 
+    /*box-shadow: -1px 5px 5px #e2e9f3; */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, 
+    rgba(0, 0, 0, 0.14) 0px 5px 8px 0px, 
+    rgba(0, 0, 0, 0.12) 0px 1px 14px 0px;
 }
 
 .experience__overlay{
@@ -411,6 +417,14 @@ footer .social-media-icons a:hover i{
 }    
 
 @media screen and (max-width: 767px){
+    .navbar{
+        position: fixed;
+        z-index: 5;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, 
+        rgba(0, 0, 0, 0.14) 0px 5px 8px 0px, 
+        rgba(0, 0, 0, 0.12) 0px 1px 14px 0px;
+        border-radius: 0 20px 20px 20px;
+    }
     .navbar-brand{
         display: none;
     }
