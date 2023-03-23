@@ -213,12 +213,6 @@ h3{
 }
 
 
-.academic{
-    /*border: 1px solid red;*/
-}
-.academic .container{
-    /*border: 1px solid blue;*/
-}
 .academic__courser-box{
     border: 1px solid transparent;
     border-radius: 10px;
@@ -263,21 +257,28 @@ h3{
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 0.5s ease;
+    border-radius: 20px;
 }
 
 .academic__overlay i{
-    color: crimson;
+    color: crimson; /*<----------white is also suitable */
     font-size: 60px;
     margin: 10px;
-}
-
-.academic__courser-box:hover .academic__overlay{
-    opacity: 1;
 }
 
 .academic__courser-box:hover .academic__list_with-link{
     opacity: 0.05;
 }
+
+
+.academic__courser-box:hover .academic__overlay{
+    opacity: 1;
+    background-color: #1b1b32;
+}
+
+/*.academic__courser-box:hover .academic__overlay i{      <------just take a look at the specificity
+    color: white;
+}*/
 
 
 /*-----------Seccion experiencia-------------------*/
