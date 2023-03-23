@@ -226,6 +226,7 @@ h3{
     rgba(0, 0, 0, 0.14) 0px 5px 8px 0px, 
     rgba(0, 0, 0, 0.12) 0px 1px 14px 0px;
     margin-bottom: 20px;
+    position: relative;  /*<----------necesario para el overlay*/    
 }
 
 .academic__list{
@@ -237,6 +238,7 @@ h3{
     padding: 0;
     height: 300px;
     text-shadow: 0 3px 4px #d4cebf;
+    transition: all 0.5s ease;
 }
 
 .academic img{
@@ -254,6 +256,31 @@ h3{
     font-weight: 500;
 }
 
+.academic__overlay{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+}
+
+.academic__overlay i{
+    color: crimson;
+    font-size: 60px;
+    margin: 10px;
+}
+
+.academic__courser-box:hover .academic__overlay{
+    opacity: 1;
+}
+
+.academic__courser-box:hover .academic__list_with-link{
+    opacity: 0.05;
+}
+
+
+/*-----------Seccion experiencia-------------------*/
 .experience{
     padding: 40px;    
     margin-bottom: 40px;
