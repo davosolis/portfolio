@@ -97,15 +97,40 @@ h3{
 /*--------------------------------------------*/
 
 /*||||||||||||||||||||||||||header|||||||||||||||||||||||||||*/
-.navbar{
-    padding: 2rem;
-    background-color: #f5f6f7;     
+.navbar{    
+    background-color: #f5f6f7; 
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 5px 8px 0px, rgba(0, 0, 0, 0.12) 0px 1px 14px 0px;
+     
 }
 
 .navbar-collapse{
     align-items: center;
     justify-content: space-between;    
 }
+
+.nav-item{
+    transition: 0.5s all;
+}
+.nav-item:hover{
+    color: #c78c19;
+    font-size: 1.05em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 3px 4px #d4cebf;
+}
+/*.nav-link{
+    transition: 0.5s all;
+}
+.nav-link:hover{
+    color: #c78c19;
+    font-size: 1.05em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 3px 4px #d4cebf;
+}*/
 
 .hero{
     background-color: #f5f6f7;
@@ -534,6 +559,7 @@ footer .social-media-icons a:hover i{
 @media screen and (max-width: 767px){
     .navbar{
         position: fixed;
+        width: initial;
         z-index: 5;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, 
         rgba(0, 0, 0, 0.14) 0px 5px 8px 0px, 
